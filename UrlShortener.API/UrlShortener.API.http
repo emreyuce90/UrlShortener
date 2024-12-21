@@ -1,0 +1,15 @@
+@UrlShortener.API_HostAddress = https://localhost:7119
+@sampleUrl ="https://www.milanjovanovic.tech/blog/solving-race-conditions-with-ef-core-optimistic-locking"
+
+POST {{UrlShortener.API_HostAddress}}/shorten
+Accept: application/json
+Content-Type:application/json
+{
+  "url":{{sampleUrl}}
+}
+
+###
+GET {{UrlShortener.API_HostAddress}}/api/7WHZdvq
+Accept:application/json
+
+###
